@@ -4,7 +4,7 @@
 CF-Workers-DoH 是一个基于 Cloudflare Workers 构建的 DNS over HTTPS (DoH) 解析服务。它允许你通过 HTTPS 协议进行 DNS 查询，提高查询的安全性和隐私保护。
 
 > [!CAUTION]
-> **doh3.zone.id 已被GFW阻断，需自行部署使用。**
+> **doh.cmliussss.hidns.co 已被GFW阻断，需自行部署使用。**
 
 > [!WARNING]
 > 如需搭建非公益服务，请务必添加`TOKEN`与`URL`变量，`URL`变量推荐为 **nginx** 即可！
@@ -16,46 +16,46 @@ CF-Workers-DoH 是一个基于 Cloudflare Workers 构建的 DNS over HTTPS (DoH)
 
 ## 📖 使用方法
 
-假设你已部署成功，你的服务域名为：`doh3.zone.id`
+假设你已部署成功，你的服务域名为：`doh.cmliussss.hidns.co`
 
 ### 1️⃣ DNS解析服务 (DoH)
 
 将以下地址添加到支持DoH的设备或软件中：
 
 ```url
-https://doh3.zone.id/dns-query
+https://doh.cmliussss.hidns.co/dns-query
 ```
 
 - 还可使用 Cloudflare 回源端口 `2053`、`2083`、`2087`、`2096`、`8443`，例如
 ```url
-https://doh3.zone.id:2053/dns-query
+https://doh.cmliussss.hidns.co:2053/dns-query
 ```
 
 - 如您设置了`TOKEN`变量为 **CMLiussss**，则
 ```url
-https://doh3.zone.id/CMLiussss
+https://doh.cmliussss.hidns.co/CMLiussss
 ```
 ### 2️⃣ 附加功能 IP信息查询
 
 #### 🔍 查询当前IP信息
 ```url
-https://doh3.zone.id/ip-info
+https://doh.cmliussss.hidns.co/ip-info
 ```
 
 - 如您设置了`TOKEN`变量为 **CMLiussss**，则
 ```url
-https://doh3.zone.id/ip-info?token=CMLiussss
+https://doh.cmliussss.hidns.co/ip-info?token=CMLiussss
 ```
 
 #### 🔍 查询指定IP信息
 ```url
-https://doh3.zone.id/ip-info?ip=8.8.8.8
+https://doh.cmliussss.hidns.co/ip-info?ip=8.8.8.8
 ```
 
 - 如您设置了`TOKEN`变量为 **CMLiussss**，则
 
 ```url
-https://doh3.zone.id/ip-info?ip=8.8.8.8&token=CMLiussss
+https://doh.cmliussss.hidns.co/ip-info?ip=8.8.8.8&token=CMLiussss
 ```
 
 #### 📝 **返回信息示例**
@@ -79,7 +79,7 @@ https://doh3.zone.id/ip-info?ip=8.8.8.8&token=CMLiussss
 ```
 
 > [!NOTE]
-> 请将示例中的 `doh3.zone.id` 替换为你实际部署的域名
+> 请将示例中的 `doh.cmliussss.hidns.co` 替换为你实际部署的域名
 
 ## 🔧 变量说明
 
@@ -108,4 +108,5 @@ https://doh3.zone.id/ip-info?ip=8.8.8.8&token=CMLiussss
 本项目开源使用，欢迎自由部署和修改！
 
 ## 🙏 鸣谢
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 [tina-hello](https://github.com/tina-hello/doh-cf-workers)、[ip-api](https://ip-api.com/)、Cloudflare、GPT
